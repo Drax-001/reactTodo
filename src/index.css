@@ -30,6 +30,7 @@ nav {
   align-items: center;
   justify-content: center;
   font-family: Acme;
+  word-spacing: 6px;
 }
 
 .app {
@@ -63,6 +64,8 @@ nav {
   width: 60%;
   padding: 10px;
   font-weight: 600;
+  border: none;
+  outline: none;
 }
 
 .add-item-btn {
@@ -81,4 +84,42 @@ nav {
   height: 90%;
   margin-top: 10px;
   overflow-y: auto;
+}
+
+.task {
+  height: 50px;
+  /* border-radius: 10px; */
+  background-color: #e7e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.task-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  margin-left: 10px;
+}
+
+.remove {
+  color: #087a4b;
+  font-size: 15px;
+  font-weight: 600;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove:hover {
+  background-color: #087a4b;
+  color: #fff;
 }
