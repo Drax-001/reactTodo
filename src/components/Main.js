@@ -6,15 +6,20 @@ import Nav from './Nav'
 const Main = () => {
 
   const [item, setItem] = useState([]);
+  const [count, setCount] = useState(item.length)
+
   useEffect(() => {
     const tasks = JSON.parse(localStorage.getItem('task'))
     if (tasks) {
       setItem(tasks);
+      setCount(tasks.length)
+      document.title = `Tasks: ${count}`;
     }
   }, [])
-
+  
   useEffect(() => {
     localStorage.setItem('task', JSON.stringify(item))
+    document.title = `Tasks: ${item.length}`;
   }, [item])
   
     return (

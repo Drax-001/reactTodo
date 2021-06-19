@@ -11,9 +11,9 @@ const Input = ({ item, setItem }) => {
             const id = new Date().getTime().toString();
             const newTask = { id: id, taskName: value }
             setItem([...item, newTask])
-        }
-        input.current.focus()
-        setValue("")
+      }
+      input.current.focus()
+      setValue("")
     }
 
     return (
