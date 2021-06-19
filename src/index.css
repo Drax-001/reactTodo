@@ -1,5 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +14,71 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  border: none;
+  outline: none !important;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 500ms ease-in-out;
+}
+
+nav {
+  background-color: #222121;
+  color: #fff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Acme;
+}
+
+.app {
+  width: 400px;
+  height: 80%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.input-container {
+  height: 10%;
+  background-color: #222121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.input {
+  height: 30px;
+  width: 60%;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.add-item-btn {
+  color: #fff;
+  height: 30px;
+  padding: 4px 20px;
+  border-radius: 20px;
+}
+
+.add-item-btn:hover {
+  background-color: #fff;
+  color: #222121;
+}
+
+.item-list {
+  height: 90%;
+  margin-top: 10px;
+  overflow-y: auto;
 }
